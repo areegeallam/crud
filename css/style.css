@@ -1,0 +1,15 @@
+
+body{
+background-color: #f7ecde;
+}
+body h1{
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-weight: bold;
+}
+
+.header h2{
+    font-family: "Righteous", cursive;
+    color: green;
+
+}

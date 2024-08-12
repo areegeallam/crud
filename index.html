@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="container pt-2">
+
+        <h1 class="pb-3 text-muted text-center">Bookmarker</h1>
+        <hr>
+
+
+        <div class=" my-5 py-4 form-project ">
+            <div class="d-flex justify-content-center header">
+                <h2><i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favourite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+
+            <div class="m-5 form-group ">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label class="font-weight-bold ">site name</label>
+                <input type="text" id="name" class="form-control" placeholder="website name">
+            </div>
+
+            <div class="m-5 form-group">
+                <i class="fa-solid fa-link"></i>
+                <label class="font-weight-bold ">site url</label>
+                <input type="text" id="url" class="form-control" placeholder="website url">
+            </div>
+            <div class="div text-center">
+                <button type="button" id="addBtn" class="btn btn-danger">submit</button>
+            </div>
+        </div>
+
+        <input onkeyup="search(this.value)" class="form-control my-3" placeholder="search by bookmark name">
+        <div class="div text-center d-flex  justify-content-center">
+            <h6 class="px-5 mx-3">website name</h6>
+            <h6 class="px-3 mx-3 ">visit</h6>
+            <h6 class="px-3 mx-3 ">update</h6>
+            <h6 class="px-3 mx-3">Delete</h6>
+        </div>
+        <hr>
+        <div class="output text-center d-flex  justify-content-center">
+            <table>
+                <tbody id="tablebody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+        <footer>
+            <h6 class="text-muted">@ 2019 bookmarker inc.</h6>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
